@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
+    assert True
     if request.method == 'POST':
         num1 = request.form['num1'].upper()
         num2 = request.form['num2'].upper()
