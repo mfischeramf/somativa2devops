@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python3  web/main.py
+      - run: python3  web/teste.py
       - uses: AppThreat/sast-scan-action@master
         with:
          type: "python"
